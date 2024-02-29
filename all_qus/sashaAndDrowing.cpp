@@ -2,14 +2,21 @@
 using namespace std;
 //write function of this question
 void isham_function(){
-    int size;
-    cin>>size;
-    long long arr[size];
-    //runnning for loop  
-    for(int i=0;i<size;i++){
-        cin>>arr[i];
+    int n,k;
+    cin>>n>>k;
+    int count=0;
+    if(k==(4*n)-2){
+        cout<<2*n<<endl;
+        return;
     }
-    
+     while(k>1){
+        k-=2;
+        count++;
+     }
+    if(k==1){
+        count++;
+    }
+    cout<<count<<endl;  
 }
 int main(){
     //consider number of test cases
