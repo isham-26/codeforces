@@ -2,13 +2,15 @@
 using namespace std;
 //write function of this question
 void isham_function(){
-    int size;
-    cin>>size;
-    long long arr[size];
-    //runnning for loop  
-    for(int i=0;i<size;i++){
-        cin>>arr[i];
-    }
+        int arr[3];
+        for(int i=0;i<3;i++){
+            cin>>arr[i];
+        }
+        sort(arr,arr+3);
+        cout<<arr[2]-arr[0]<<endl;
+
+        
+ 
     
 }
 int main(){
