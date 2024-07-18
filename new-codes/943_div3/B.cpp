@@ -3,9 +3,22 @@ using namespace std;
 #define int long long
 //write function of this question
 void isham_function(){
-        int N,K;
-        cin>>N>>K;
-           
+        int N,M;
+        cin>>N>>M;
+        string a,b;
+        cin>>a;
+        cin>>b;
+        int count=0;
+        for(int i=0;i<M;i++){
+            if(a[count]==b[i]){
+                count++;
+            }
+        }
+        cout<<count<<endl;
+        
+        
+ 
+    
 }
 signed main(){
     //consider number of test cases

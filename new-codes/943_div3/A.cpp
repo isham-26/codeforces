@@ -3,9 +3,13 @@ using namespace std;
 #define int long long
 //write function of this question
 void isham_function(){
-        int N,K;
-        cin>>N>>K;
-           
+        int N;
+        cin>>N;
+        cout<<N-1<<endl;
+
+        
+ 
+    
 }
 signed main(){
     //consider number of test cases
