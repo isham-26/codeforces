@@ -21,10 +21,6 @@ void isham_function(){
             cout<<ans[i]<<" ";
         }
         cout<<endl;
-
-        
- 
-    
 }
 signed main(){
     //consider number of test cases
