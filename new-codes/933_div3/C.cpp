@@ -13,12 +13,22 @@ void print_arr(int *arr,int N){
     }
     cout<<endl;
 }
+
 void isham_function(){
-        int N,K;
-        cin>>N>>K;
-        int arr[N+1];
-        fill_arr(arr,N);
-           
+        int N;
+        cin>>N;
+        string s;
+        cin>>s;
+        int ans=0;
+        for(int i=0;i<s.size();i++){
+            if(s.substr(i,3)=="map"||s.substr(i,3)=="pie"){
+                ans++;
+                s[i+2]='z';
+            }
+        }
+        cout<<ans<<endl;
+        
+               
 }
 signed main(){
     //consider number of test cases

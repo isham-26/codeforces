@@ -2,22 +2,13 @@
 using namespace std;
 #define int long long
 //write function of this question
-void fill_arr(int *arr,int N){
-    for(int i=1;i<=N;i++){
-        cin>>arr[i];
-    }
-}
-void print_arr(int *arr,int N){
-    for(int i=1;i<=N;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-}
 void isham_function(){
-        int N,K;
-        cin>>N>>K;
-        int arr[N+1];
-        fill_arr(arr,N);
+        int N;
+        cin>>N;
+        int left=N/10;
+        int right=N%10;
+        cout<<left+right<<endl;
+        return;
            
 }
 signed main(){

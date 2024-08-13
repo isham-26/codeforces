@@ -2,22 +2,18 @@
 using namespace std;
 #define int long long
 //write function of this question
-void fill_arr(int *arr,int N){
-    for(int i=1;i<=N;i++){
-        cin>>arr[i];
-    }
-}
-void print_arr(int *arr,int N){
-    for(int i=1;i<=N;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-}
 void isham_function(){
-        int N,K;
-        cin>>N>>K;
-        int arr[N+1];
-        fill_arr(arr,N);
+        string s,t;
+        cin>>s;
+        cin>>t;
+        map<int ,int>mp;
+        for(auto x:s){
+            mp[x]++;
+        }
+        for(int i=0;i<t.size();i++){
+
+        }
+
            
 }
 signed main(){
