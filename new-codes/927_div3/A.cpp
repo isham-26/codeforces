@@ -3,12 +3,12 @@ using namespace std;
 #define int long long
 //write function of this question
 void fill_arr(int *arr,int N){
-    for(int i=0;i<N;i++){
+    for(int i=1;i<=N;i++){
         cin>>arr[i];
     }
 }
 void print_arr(int *arr,int N){
-    for(int i=0;i<N;i++){
+    for(int i=1;i<=N;i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
@@ -16,8 +16,9 @@ void print_arr(int *arr,int N){
 void isham_function(){
         int N;
         cin>>N;
-        // int arr[N];
-        // fill_arr(arr,N);
+        string path;
+        cin>>path;
+        
            
 }
 signed main(){
