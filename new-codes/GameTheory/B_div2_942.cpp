@@ -16,8 +16,21 @@ void print_arr(int *arr,int N){
 void isham_function(){
         int N;
         cin>>N;
-        int arr[N];
-        fill_arr(arr,N);
+        //int arr[N];
+        //fill_arr(arr,N);
+        string s;
+        cin>>s;
+        int count=0;
+        for(auto x:s){
+            if(x=='U'){
+                count++;
+            }
+        }
+        if(count%2==1){
+            cout<<"Yes"<<endl;
+        }else{
+            cout<<"No"<<endl;
+        }
            
 }
 signed main(){

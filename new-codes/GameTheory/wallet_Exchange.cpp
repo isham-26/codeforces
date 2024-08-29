@@ -14,10 +14,15 @@ void print_arr(int *arr,int N){
     cout<<endl;
 }
 void isham_function(){
-        int N;
-        cin>>N;
-        int arr[N];
-        fill_arr(arr,N);
+        int a,b;
+        cin>>a>>b;
+        // int arr[N];
+        // fill_arr(arr,N);
+        if((a+b)%2==1){
+            cout<<"Alice"<<endl;
+        }else{
+            cout<<"Bob"<<endl;
+        }
            
 }
 signed main(){

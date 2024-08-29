@@ -14,10 +14,25 @@ void print_arr(int *arr,int N){
     cout<<endl;
 }
 void isham_function(){
-        int N;
-        cin>>N;
+        int N,K;
+        cin>>N>>K;
         int arr[N];
         fill_arr(arr,N);
+        map<int,int>mp;
+        for(auto x:arr){
+            mp[x]++;
+        }
+        int maxi=0;
+        for(auto x:mp){
+            maxi=max(maxi,x.second);
+        }
+        if(maxi<K){
+            cout<<N<<endl;
+        }
+        else{
+            cout<<K-1<<endl;
+        }
+
            
 }
 signed main(){
